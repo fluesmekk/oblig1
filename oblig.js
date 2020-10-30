@@ -3,6 +3,7 @@ var dateNumber = '20.04.2020';
 
 
 
+
 //view
 updateView();
 function updateView() {
