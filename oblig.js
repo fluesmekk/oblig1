@@ -21,6 +21,8 @@ function isDateValid(dateString) {
 
     var dateNumber = dateString;
 
+
+        //tar med seg variablene som deles opp under
         isLengthCorrect(dateNumber);
         isDateCorrectlySetUp();
         isYearCorrect(year);
@@ -28,6 +30,7 @@ function isDateValid(dateString) {
         isLeapYear(year);
         isDayCorrect(day, month, leapYear)
 
+        //her deles opp Datoen du putter inn
         var day = dateNumber.substring(0,2);
         var month = dateNumber.substring(3,5);
         var year = dateNumber.substring(6, 9);
@@ -99,7 +102,7 @@ function isDateValid(dateString) {
             dayCorrect = true;
         } else if (month !== '02' && day <= '30') {
             dayCorrect = true;
-        } else if ((month === '01' || month === '03' 
+        } else if    ((month === '01' || month === '03' 
                     || month === '05' || month === '07' 
                     || month === '08' || month === '10' 
                     || month === '12') && day === '31') {
